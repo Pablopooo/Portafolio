@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  margin: 500px;
+  background-color: #c98fdc;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.button-container {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 30px;
+  background-color: #7c0d8b;
+  color: rgb(255, 255, 255);
+  border-color: hsl(0, 0%, 0%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f686e7;
+}
+
+.content-container {
+  text-align: center;
+}
+
+.content-container img {
+  max-width: 40%;
+  max-height: 400px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 400px;
+  
+}
+
+.content-container p {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+.neko-image {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 50px;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 60px;
+  }
+
+  .content-container {
+    padding-top: 50px;
+    flex-direction: row; /* Cambia la dirección del flex para colocar los botones a un lado */
+    justify-content: space-around; /* Distribuye los elementos horizontalmente */
+    align-items: flex-start; /* Alinea los elementos arriba */
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+
+  .content-container img {
+    width: 40%; /* Cambio en el ancho */
+  }
+}
