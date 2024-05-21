@@ -1,1 +1,0 @@
-mi portafolio osi osi
